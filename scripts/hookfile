@@ -14,7 +14,7 @@ process.env.HOOK_ARGS = restArgs;
 var gulp = (process.platform === 'win32' ? 'gulp.cmd' : 'gulp');
 var dir = execSync('yarn bin gulp').toString().trim();
 
-var hook = spawn(path.join(dir, gulp), [hookName], {
+var hook = spawn(path.join(dir, gulp), ['--silent', hookName], {
   stdio: 'inherit',
   cwd: cwd
 });
