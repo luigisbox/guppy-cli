@@ -20,6 +20,8 @@
     "it": true,
     "exec": true,
     "exit": true,
+    "cat": true,
+    "grep": true,
     "echo": true,
     "mv": true,
     "cp": true,
